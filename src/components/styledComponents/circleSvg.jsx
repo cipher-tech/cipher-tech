@@ -4,18 +4,21 @@ import icon from "../../images/circleSvg.svg"
 
 const movement = keyframes`
     0% {
-        transform: scale(.8)
+        transform: scale(1)
     }
-    25%{
-        transform: scale(1.1)
+    40%{
+        transform: scale(1.2)
+    }
+    45%{
+        transform: scale(1)
     }
     50%{
-        transform: scale(.8)
+        transform: scale(1.2)
     }
-    100%{
-        transform: scale(1.1s)
+    55%{
+        transform: scale(1)
+    }
 
-    }
 `
 
 let SvgIcon = styled.div`
@@ -30,7 +33,7 @@ let SvgIcon = styled.div`
         backface-visibility: visible;
         /* transform: rotateX('angle') */
         transition: all 2s ease-in;
-        animation: ${movement} 1.3s ease-in-out 0s infinite; 
+        animation: ${movement} 1.5s ease-in-out 0s infinite; 
 
     }
 `

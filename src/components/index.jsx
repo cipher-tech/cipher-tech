@@ -6,6 +6,7 @@ import Works from "./works";
 import Testimonials from "./testimonials";
 import Contacts from "./contact";
 import Footer from "./footer";
+import breakPoints from "./breakPoints";
 
 
 
@@ -17,3 +18,4 @@ export let Projects = Works
 export let Testimonial = Testimonials
 export let Contact = Contacts
 export let Foot = Footer
+export let breakPoint = breakPoints

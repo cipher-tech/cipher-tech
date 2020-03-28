@@ -23,6 +23,11 @@ const theme = {
     mainFont: "Montserrat",
     extra: "Segoe UI",
     offSet: "Mongolian Baiti"
+  },
+  breakPoints: {
+    bpLarge: "56.25rem", //900px
+    bpMedium: "43.75rem",  //700px
+    bpSmall: "37.5rem"  //600px
   }
 }
 

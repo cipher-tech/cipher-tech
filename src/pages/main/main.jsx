@@ -11,7 +11,7 @@ export default class Main extends Component {
                    
                </Head>
 
-               <AboutMe>
+               {/* <AboutMe>
                </AboutMe>
                <Service>
 
@@ -28,7 +28,7 @@ export default class Main extends Component {
                <Contact>
 
                </Contact>
-               <Foot></Foot>
+               <Foot></Foot> */}
             </>
         )
     }
