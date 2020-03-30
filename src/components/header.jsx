@@ -74,7 +74,8 @@ let Container = styled.div`
     .header-text{
         height: 50%;
         position:relative;
-        width: 80%;
+        min-width: 35rem;
+        width: 90%;
         color: ${props => props.theme.colorDark};
         align-self: center;
         justify-self: center;
@@ -114,10 +115,10 @@ let Container = styled.div`
             `
             } }
             @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {
-                top: 25rem;
+                top: 20rem;
              }
             @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
-                top: 20rem;
+                top: 17rem;
              }
             
             
@@ -164,10 +165,12 @@ let Container = styled.div`
         grid-row: 1/ span 2;
         grid-column: 2;
         clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
-        padding-left: 4rem;
         &--person{
             height: 100%;
             width: 100%;
+            padding-left: 4rem;
+            padding-bottom: 4rem;
+
             
             @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
                 
@@ -175,11 +178,11 @@ let Container = styled.div`
             }
             @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {
                 
-                padding-left: 2.2rem;
+                padding-left: 2.5rem;
             }
             @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
                 
-                padding-left: 1.2rem;
+                padding-left: 1.4rem;
             }
             
         }
