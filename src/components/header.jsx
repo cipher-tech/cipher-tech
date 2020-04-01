@@ -81,6 +81,9 @@ let Container = styled.div`
         justify-self: center;
         @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
             align-self: center ;
+            min-width: 25rem;
+            align-self: flex-start;
+            margin-top: 2rem;
         }
         
         &--svgIcon-1{
@@ -118,7 +121,7 @@ let Container = styled.div`
                 top: 20rem;
              }
             @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
-                top: 17rem;
+                top: 20rem;
              }
             
             
@@ -153,6 +156,7 @@ let Container = styled.div`
                 font-size: 1.9rem;
              }
                 @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
+                    margin-top: 2rem;
                     margin-top: 2rem;
              }
              

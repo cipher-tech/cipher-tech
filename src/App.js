@@ -25,6 +25,8 @@ const theme = {
     offSet: "Mongolian Baiti"
   },
   breakPoints: {
+    bpLargest: "1700px", // 1550px
+    bpxLarge: "69.375rem", // 1110px
     bpLarge: "56.25rem", //900px
     bpMedium: "43.75rem",  //700px
     bpSmall: "37.5rem"  //600px
