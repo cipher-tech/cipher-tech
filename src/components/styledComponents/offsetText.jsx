@@ -5,19 +5,21 @@ let StyledText = styled.h4`
     /* position: relative; */
     display: flex;
     place-content: center;
+    position: relative;
     font-size: 4rem;
     font-weight: bold;
     font-family: "Mongolian Baiti";
     padding-top:4rem;
     text-decoration: underline;
-    color: ${props => props.theme.colorPrimary};
+    color: ${props => props.white ? props.theme.colorLight: props.theme.colorPrimary};
 
     &::after{
-        content: "About me"; /* ${props => props.offset} */
+        content: "${props => props.offset}";
         position: absolute;
-        top: .4rem;
+        top: .3rem;
         opacity: .2;
         left: 50%;
+        color: currentColor;
         transform: translate(-50%, 0%);
         font-size: 7rem;
 

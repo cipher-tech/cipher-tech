@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { OffsetText } from './styledComponents'
+import { OffsetText, Triangle, XIcon } from './styledComponents'
 import bgSvg from "../images/aboutMeCurve.svg"
 import aboutPic from "../images/aboutPic.JPG"
 import twitterSvg from "../images/twitter.svg"
@@ -35,11 +35,39 @@ let Container = styled.div`
     .aboutMeSvg{
         position: absolute;
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         object-fit: cover;
+        max-height: 1800px !important;
         display: block;
         padding: 0;
         bottom: -20vh;
+        @media only screen and (min-width: ${props => props.theme.breakPoints.bpLargest}) {
+            bottom: -20rem;
+            max-height: 1800px !important;
+        }
+        @media only screen and (max-width: ${props => props.theme.breakPoints.bpLargest}) {
+            bottom: -10rem;
+            /* height: 50%; */
+        }
+        @media only screen and (max-width: ${props => props.theme.breakPoints.bpxLarge}) {
+            bottom: 0vh;
+            height: 80%;
+        }
+        @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
+            bottom: 0vh;
+            height: 90%;
+            
+        }
+        @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {
+            bottom: 0vh;
+            height: 100%;
+
+        }
+        @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
+            bottom: 0vh;
+            height: 100%;
+
+        }
     }
     .aboutMe-title{
         grid-column: 1/-1;
@@ -56,6 +84,20 @@ let Container = styled.div`
         @media only screen and (max-width: ${props => props.theme.breakPoints.bpxLarge}) {
             grid-column: 1/-1;
         }
+        &-SvgIcon{
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            top: -4rem;
+            right: -5rem;
+        }
+        &-SvgXIcon{
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            bottom: -4rem;
+            left: -5rem;
+        }
         &-photo{
             position: absolute;
             width: 100%;
@@ -67,12 +109,9 @@ let Container = styled.div`
         }
     }
     .aboutMeTxt{
-        
         align-self: flex-start;
         margin: 3rem 16rem 1rem 3rem;
         line-height: 1rem;
-        
-        
         width:100%;
         grid-column: 2/-1;
         max-width: 100rem;
@@ -193,6 +232,12 @@ function About(props) {
                 About me
             </OffsetText>
             <div className="aboutMeImg">
+                <div className="aboutMeImg-SvgIcon">
+                    <Triangle />
+                </div>
+                <div className="aboutMeImg-SvgXIcon">
+                    <XIcon />
+                </div>
                 <img src={aboutPic} alt="about Pic" className="aboutMeImg-photo" />
             </div>
             <div className="aboutMeTxt">
@@ -233,24 +278,24 @@ function About(props) {
 
             </div>
             <div className="moreInfo">
-            <ul className="aboutMeSocial">
-                <li className="aboutMeSocial-icons">
-                    <img src={twitterSvg} alt="twitterSvg" />
-                </li>
-                <li className="aboutMeSocial-icons">
-                    <img src={facebookSvg} alt="facebookSvg" />
-                </li>
-                <li className="aboutMeSocial-icons">
-                    <img src={instagramSvg} alt="instagramSvg" />
-                </li>
-                <li className="aboutMeSocial-icons">
-                    <img src={linkedinSvg} alt="linkedinSvg" />
-                </li>
-                <li className="aboutMeSocial-icons">
-                    <img src={githubSvg} alt="githubSvg" />
-                </li>
-            </ul>
-            <button className="CVDownload">Download CV</button>
+                <ul className="aboutMeSocial">
+                    <li className="aboutMeSocial-icons">
+                        <img src={twitterSvg} alt="twitterSvg" />
+                    </li>
+                    <li className="aboutMeSocial-icons">
+                        <img src={facebookSvg} alt="facebookSvg" />
+                    </li>
+                    <li className="aboutMeSocial-icons">
+                        <img src={instagramSvg} alt="instagramSvg" />
+                    </li>
+                    <li className="aboutMeSocial-icons">
+                        <img src={linkedinSvg} alt="linkedinSvg" />
+                    </li>
+                    <li className="aboutMeSocial-icons">
+                        <img src={githubSvg} alt="githubSvg" />
+                    </li>
+                </ul>
+                <button className="CVDownload">Download CV</button>
             </div>
 
             <img src={bgSvg} className="aboutMeSvg" alt="aboutSvg" />
