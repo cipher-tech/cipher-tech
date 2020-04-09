@@ -6,26 +6,50 @@ const Container = styled.p`
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
-    width: 45rem;
+    width: 55rem;
     padding: .8rem 2rem;
     color: currentColor;
     font-size: 1.8rem;
     margin-top: 2rem;
+    @media only screen and (min-width: ${props => props.theme.breakPoints.bpLargest}) {
+        width: 55rem;
+    }
+    @media only screen and (max-width: ${props => props.theme.breakPoints.bpxxLarge}) {
+        width: 45rem;
+    }
+    @media only screen and (max-width: ${props => props.theme.breakPoints.bpxLarge}) {
+        width: 35rem;
+    }
+    @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
+        width: 35rem;
+    }
+    @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {
+        width: 45rem;
+    }
+    @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {
+        width: 40rem;
+        padding: .8rem .2rem;
+    }
+    @media only screen and (max-width: ${props => props.theme.breakPoints.bpxSmall}) {
+        width: 30rem;
+        padding: .8rem .2rem;
+    }
     .skillSet-level--title{
-        justify-items: flex-end;
+        justify-items: center;
         text-align: left;
         padding-left: 2rem;
     }
     span:nth-last-child(2){
-        justify-items: flex-end;
-        text-align: right;
-        padding-right: 2rem;
+        justify-items: flex-start;
+        text-align: end;
+        padding-right: 1rem;
     }
 
     progress[value] {
         margin-top: 1rem;
         grid-column: 1/-1;
         appearance: none;
+        width: 100%;
         /* width: 35rem; */
         height: 1.2rem;
         border-radius: 1rem;
@@ -43,7 +67,7 @@ const Container = styled.p`
     }
     progress[value]::-webkit-progress-bar{
         appearance: none;
-        width: 35rem;
+        width: 100%;
         height: 1.2rem;
         border-radius: 1rem;
         background: #FFFFFF61;

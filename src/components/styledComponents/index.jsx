@@ -6,6 +6,7 @@ import TriangleSvg from "./triangleSvg"
 import styledText from "./offsetText"
 import XSvg from "./xIcon"
 import Skill from "./skillProgress"
+import WorksCardS from "./worksCard"
 
 
 
@@ -17,3 +18,4 @@ export let Triangle = TriangleSvg
 export const XIcon = XSvg
 export let OffsetText = styledText
 export const SkillProgress = Skill
+export const WorksCard = WorksCardS

@@ -81,14 +81,14 @@ let Container = styled.div`
             width: 2rem;
             height: 2rem;
             top: 1rem;
-            right: 40%;
+            right: 30%;
         }
         &--SvgXIcon{
             position: absolute;
             width: 1.5rem;
             height: 1.5rem;
             top: 9rem;
-            left: 40%;
+            left: 30%;
         }
     }
     .services-description{

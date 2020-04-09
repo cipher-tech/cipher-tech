@@ -8,8 +8,21 @@ let Container = styled.div`
     /* height: 50vh; */
     grid-column: 1/-1;
     display: grid;
+        overflow: hidden;
     align-items: center;
-    grid-template-columns: repeat(2, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    @media only screen and (min-width: ${props => props.theme.breakPoints.bpLargest}) {
+        grid-template-columns: repeat(2, minmax(40rem, 1fr));
+
+        }
+    @media only screen and (max-width: ${props => props.theme.breakPoints.bpLargest}) {
+        grid-template-columns: repeat(2, minmax(30rem, 1fr));
+        overflow: hidden;
+    }
+    @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        overflow: hidden;
+    }
     gap: 1rem 10rem;
     .title{
         grid-column: 1/-1;
@@ -17,19 +30,24 @@ let Container = styled.div`
     .skillSet{
         display: grid;
         grid-template-columns: 2fr;
-        justify-items: flex-end;
+        justify-items: center;
         align-items: flex-start;
         /* height: 100% ; */
         padding: 3rem 4rem;
         color: ${props => props.theme.colorLight};
 
+        @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {
+            padding: 2rem 1rem;
+        }
         &-heading{
+            display: flex;
             justify-self: center;
-            font-size: 1.9rem
+            font-size: 1.9rem;
+            width: 100%,
         }
     }
     .skillSet:last-child{
-        justify-items: flex-start;
+        justify-items: center;
     }
 `
 function Skills() {
