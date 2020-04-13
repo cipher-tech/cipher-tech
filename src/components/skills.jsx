@@ -60,20 +60,19 @@ function Skills() {
             <div className="skillSet">
                 <h5 className="skillSet-heading">Programming Skills</h5>
 
-                <SkillProgress title="Python" level="75" />
-                <SkillProgress title="Python" level="75" />
-                <SkillProgress title="Python" level="75" />
-                <SkillProgress title="Python" level="75" />
-                <SkillProgress title="Python" level="75" />
-
+                <SkillProgress title="HTML & CSS" level="95" />
+                <SkillProgress title="JavaScript" level="95" />
+                <SkillProgress title="NodeJS" level="90" />
+                <SkillProgress title="Python" level="80" />
+                <SkillProgress title="PHP" level="80" />
             </div>
             <div className="skillSet">
-                <h5 className="skillSet-heading">Frame-Works</h5>
+                <h5 className="skillSet-heading">FrameWorks</h5>
 
-                <SkillProgress title="Python" level="75" />
-                <SkillProgress title="Python" level="75" />
-                <SkillProgress title="Python" level="75" />
-                <SkillProgress title="Python" level="75" />
+                <SkillProgress title="React" level="95" />
+                <SkillProgress title="Laravel" level="85" />
+                <SkillProgress title="Express" level="85" />
+                <SkillProgress title="Apollo" level="80" />
                 <SkillProgress title="Python" level="75" />
 
             </div>

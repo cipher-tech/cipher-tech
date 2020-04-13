@@ -7,6 +7,7 @@ import styledText from "./offsetText"
 import XSvg from "./xIcon"
 import Skill from "./skillProgress"
 import WorksCardS from "./worksCard"
+import testimonialComp from "./testimonialComp"
 
 
 
@@ -19,3 +20,4 @@ export const XIcon = XSvg
 export let OffsetText = styledText
 export const SkillProgress = Skill
 export const WorksCard = WorksCardS
+export const TestimonialCard = testimonialComp

@@ -16,17 +16,18 @@ let StyledText = styled.h4`
     &::after{
         content: "${props => props.offset}";
         position: absolute;
-        top: .3rem;
+        top: 2rem;
         opacity: .2;
-        left: 50%;
+        left: 48%;
         color: currentColor;
-        transform: translate(-50%, 0%);
-        font-size: 7rem;
+        transform: translate(-45%, 0%);
+        font-size: 5rem;
 
         @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
             height: 2rem;
-            font-size: 5rem;
-            top: 1.6rem
+            font-size: 4.5rem;
+            top: 1.6rem;
+            left: 45%;
         }
     }
 `

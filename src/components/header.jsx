@@ -1,10 +1,36 @@
 import React from 'react'
-import styled, {css} from 'styled-components'
+import styled, {css, keyframes} from 'styled-components'
 import logo from "../images/logo.jpg"
 import personSvg from "../images/personSvg.svg"
 import { Diamond, Triangle, Circle } from './styledComponents'
 import breakPoint  from './breakPoints'
 
+const bounce = keyframes`
+    0% {
+        transform: translateY(-500px)
+    }
+    50% {
+        transform: translateY(0px); 
+    }
+    60% {
+        transform: translateY(-60px); 
+    }
+    70% {
+        transform: translateY(0px); 
+    }
+    80% {
+        transform: translateY(-30px); 
+    }
+    90% {
+        transform: translateY(0px); 
+    }
+    95% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        transform: translateY(0px); 
+    }
+`
 let Container = styled.div`
     background:  ${props => props.theme.colorSecondary} ;
     grid-column: 1/-1;
@@ -12,6 +38,7 @@ let Container = styled.div`
     grid-template-rows: min-content 1fr;
     grid-template-columns: 1fr 65%;
     font-size: 1.6rem;
+    animation: ${bounce} 1.5s cubic-bezier(0.1, -0.6, 0.2,0);
     @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
         grid-template-columns: minmax(30rem, 1fr) 50%;
         }
@@ -128,8 +155,8 @@ let Container = styled.div`
         }
 
         h3{
-            font-weight: 600;
-            font-size: 3.5rem;
+            font-weight: 400;
+            font-size: 2.5rem;
             text-shadow: 0 .15rem .2rem ${props => props.theme.colorDark};
             margin-bottom: 3rem;
             @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {

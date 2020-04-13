@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import bg2 from "../images/p3-3.jpg"
-import { OffsetText } from './styledComponents'
+import bg2 from "../images/avatar1.jpg"
+import { OffsetText, XIcon, Triangle } from './styledComponents'
 import "swiper/css/swiper.css"
 import Swiper from "react-id-swiper"
 
@@ -10,39 +10,94 @@ let Container = styled.div`
     grid-column: 2/10;
     margin:5rem;
 
-    .swiper-wrapper{
-        /* height: 30rem; */
-        /* justify-content: center;
-        align-content: center; */
-        /* margin: 4rem; */
-        padding: 2rem 2rem;
-
-        &-mainContent{
-            display: grid;
-            /* width:100%; */
-            grid-template-rows: repeat(3, 1fr);
-            /* grid-template-rows:  */
-            justify-items: center;
-            align-items: center;
-
-            &--avater{
-                height: 8rem;
-                width: 8rem;
-                border-radius: 1.5rem;
-                margin: 2rem
+    @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
+        grid-column: 1/-1;
+        margin:.5rem;
+    }
+    .offsetText{
+        margin: 3rem 1rem;
+        &--SvgIcon{
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            top: 8rem;
+            /* top: 2rem; */
+            right: 36%;
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpxxLarge}) {
+                right: 34%;
             }
-            &--text{
-                font-size: 1.7rem;
-                width: 80%;
-                line-height: 1.5;
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpxLarge}) {
+                right: 30%;
             }
-            &--profile{
-                align-self: flex-start;
-                font-size: 1.5rem; 
-                font-weight: 600;
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {
+                right: 26%;
+            }
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
+                right: 20%;
+            }
+        }
+        &--SvgXIcon{
+            position: absolute;
+            width: 1rem;
+            height: 1rem;
+            top: 1rem;
+            /* top: 8rem; */
+            left: 38%;
+            
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpxLarge}) {
+                left: 32%;
+            }
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {
+                left: 26%;
+            }
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
+                left: 20%;
+                top: 9rem;
             }
         }
     }
+     .swiper-wrapper{
+       
+        padding: 2rem 0rem;
+
+        &-mainContent{
+            display: grid;
+    
+            grid-template-rows: 1fr min-content max-content;
+            
+            justify-items: center;
+            align-items: center;
+
+            &-imgContainer{
+                width:100%;
+                display: flex;
+                justify-content: center;
+                &--avater{
+                    height: 8rem;
+                    width: 8rem;
+                    border-radius: 1.5rem;
+                    margin: 2rem 0; 
+            }
+            }
+            &--text{
+                font-size: 1.5rem;
+                width: 80%;
+                /* text-overflow:eli */
+                text-align: center;
+                line-height: 1.5;
+            }
+            &--profile{
+                display: flex;
+                justify-content: center;
+                width: 80%;
+                align-self: flex-start;
+                padding: 2rem 1rem;
+                font-size: 1.5rem; 
+                font-weight: 600;
+                height: 3rem;
+            }
+        }
+    }  
 `
 function Testimonials() {
     const params = {
@@ -55,7 +110,7 @@ function Testimonials() {
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
-          },
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -67,60 +122,111 @@ function Testimonials() {
     }
     return (
         <Container>
-            <OffsetText offset="Kind Words">
+            <OffsetText className="offsetText" offset="Kind Words">
                 Testimonials
+                <div className="offsetText--SvgIcon">
+                    <Triangle />
+                </div>
+                <div className="offsetText--SvgXIcon">
+                    <XIcon />
+                </div>
             </OffsetText>
 
             <Swiper {...params} className="swiper-wrapper">
+                {/* <TestimonialCard img={bg2} /> */}
+                {/* <TestimonialCard img={bg2} /> */}
                 <div className="swiper-wrapper-mainContent">
-                    <img className="swiper-wrapper-mainContent--avater" src={bg2} alt="testimonial pic" />
+                    <div className="swiper-wrapper-mainContent-imgContainer">
+                        <img className="swiper-wrapper-mainContent-imgContainer--avater" src={bg2} alt="testimonial pic" />
+                    </div>
                     <p className="swiper-wrapper-mainContent--text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quo non voluptatum neque eos assumenda consequatur deserunt tempora eveniet
-                        totam amet in,
-                        soluta ex! Alias qui laborum, ex quia vel suscipit.
+                    I am a skilled programmer that likes writing modular codes that are easily maintainable 
+                    and supports continuous integration. I'm skilled in the art of 
+                    translating design mock-ups and prototypes in tools like figma and 
+                    adobeXD into responsive full fledged iweb apps. I currently work at 
+                    rapport tech as a front-end engineer, working on different projects. 
+                    In my spare time I work on my personal projects and study to get better. 
+                    My hobbies include hanging out with friends, watching movies and playing video games.
+
                     </p>
                     <p className="swiper-wrapper-mainContent--profile">
-                        kacnam ojvom avjm 'sdodmv' am kbd
+                        -kacnam ojvom avjm 'sdodmv' am kbd
                     </p>
                 </div>
                 <div className="swiper-wrapper-mainContent">
-                    <img className="swiper-wrapper-mainContent--avater" src={bg2} alt="testimonial pic" />
+                    <div className="swiper-wrapper-mainContent-imgContainer">
+                        <img className="swiper-wrapper-mainContent-imgContainer--avater" src={bg2} alt="testimonial pic" />
+                    </div>
                     <p className="swiper-wrapper-mainContent--text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quo non voluptatum neque eos assumenda consequatur deserunt tempora eveniet
-                        totam amet in,
-                        soluta ex! Alias qui laborum, ex quia vel suscipit.
                     </p>
                     <p className="swiper-wrapper-mainContent--profile">
-                        kacnam ojvom avjm 'sdodmv' am kbd
+                        -kacnam ojvom avjm 'sdodmv' am kbd
                     </p>
                 </div>
                 <div className="swiper-wrapper-mainContent">
-                    <img className="swiper-wrapper-mainContent--avater" src={bg2} alt="testimonial pic" />
+                    <div className="swiper-wrapper-mainContent-imgContainer">
+                        <img className="swiper-wrapper-mainContent-imgContainer--avater" src={bg2} alt="testimonial pic" />
+                    </div>
                     <p className="swiper-wrapper-mainContent--text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quo non voluptatum neque eos assumenda consequatur deserunt tempora eveniet
-                        totam amet in,
-                        soluta ex! Alias qui laborum, ex quia vel suscipit.
                     </p>
                     <p className="swiper-wrapper-mainContent--profile">
-                        kacnam ojvom avjm 'sdodmv' am kbd
+                        -kacnam ojvom avjm 'sdodmv' am kbd
+                    </p>
+                </div>
+                <div className="swiper-wrapper-mainContent">
+                    <div className="swiper-wrapper-mainContent-imgContainer">
+                        <img className="swiper-wrapper-mainContent-imgContainer--avater" src={bg2} alt="testimonial pic" />
+                    </div>
+                    <p className="swiper-wrapper-mainContent--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quo non voluptatum neque eos assumenda consequatur deserunt tempora eveniet
+                    </p>
+                    <p className="swiper-wrapper-mainContent--profile">
+                        -kacnam ojvom avjm 'sdodmv' am kbd
                     </p>
                 </div>
                 {/* <div className="swiper-wrapper-mainContent">
-                    <img className="swiper-wrapper-mainContent--avater" src={bg2} alt="testimonial pic" />
+                    <div className="swiper-wrapper-mainContent-imgContainer">
+                        <img className="swiper-wrapper-mainContent-imgContainer--avater" src={bg2} alt="testimonial pic" />
+                    </div>
                     <p className="swiper-wrapper-mainContent--text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quo non voluptatum neque eos assumenda consequatur deserunt tempora eveniet
-                        totam amet in,
-                        soluta ex! Alias qui laborum, ex quia vel suscipit.
+                    </p>
+                    <p className="swiper-wrapper-mainContent--profile">
+                        -kacnam ojvom avjm 'sdodmv' am kbd
+                    </p>
+                </div>
+                <div className="swiper-wrapper-mainContent">
+                    <div className="swiper-wrapper-mainContent-imgContainer">
+                        <img className="swiper-wrapper-mainContent-imgContainer--avater" src={bg2} alt="testimonial pic" />
+                    </div>
+                    <p className="swiper-wrapper-mainContent--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quo non voluptatum neque eos assumenda consequatur deserunt tempora eveniet
+                    </p>
+                    <p className="swiper-wrapper-mainContent--profile">
+                        kacnam ojvom avjm 'sdodmv' am kbd
+                    </p>
+                </div>
+                <div className="swiper-wrapper-mainContent">
+                    <div className="swiper-wrapper-mainContent-imgContainer">
+                        <img className="swiper-wrapper-mainContent-imgContainer--avater" src={bg2} alt="testimonial pic" />
+                    </div>
+                    <p className="swiper-wrapper-mainContent--text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quo non voluptatum neque eos assumenda consequatur deserunt tempora eveniet
                     </p>
                     <p className="swiper-wrapper-mainContent--profile">
                         kacnam ojvom avjm 'sdodmv' am kbd
                     </p>
                 </div> */}
-               
+
+
             </Swiper>
         </Container>
     )

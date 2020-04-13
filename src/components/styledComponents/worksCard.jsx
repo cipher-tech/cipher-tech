@@ -22,8 +22,11 @@ const Container = styled.div`
     }
     .text{
         display: flex;
+        flex-wrap: wrap;
+        width: 80%;
         /* width: 100%; */
         font-size: 1.5rem;
+        text-align: center;
         justify-content: center;
         align-items: center;
         padding: 2.5rem;

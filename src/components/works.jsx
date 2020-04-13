@@ -14,6 +14,9 @@ let Container = styled.div`
     padding: 2rem;
     margin-bottom: 2rem;
 
+    @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
+        grid-column: 1/-1;
+    }
     .projects-title{
         margin: 3rem 1rem;
         &--SvgIcon{
@@ -42,21 +45,25 @@ let Container = styled.div`
             top: 8rem;
             left: 38%;
             
-            @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
-                left: 24%;
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpxLarge}) {
+                left: 32%;
             }
             @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {
                 left: 26%;
             }
-            @media only screen and (max-width: ${props => props.theme.breakPoints.bpxLarge}) {
-                left: 32%;
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
+                left: 20%;
+                top: 9rem;
             }
         }
     }
     .swiper-wrapper{ 
         height: 50rem;
-        margin: 3rem 0;
-        width: 40rem;
+        margin: 3rem 2rem;
+        width: 35rem;
+        /* @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
+           width: 40px;
+        } */
     }
 `
 function Works(props) {
@@ -64,7 +71,7 @@ function Works(props) {
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: false,
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         coverflowEffect: {
             rotate: 50,
             stretch: 0,

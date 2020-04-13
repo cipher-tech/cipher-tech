@@ -7,6 +7,7 @@ import twitterSvg from "../images/twitter.svg"
 import facebookSvg from "../images/facebook.svg"
 import instagramSvg from "../images/instagram.svg"
 import linkedinSvg from "../images/linkedin.svg"
+import devStackSvg from "../images/devStack.svg"
 import githubSvg from "../images/github.svg"
 // import Text from './styledComponents/offsetText'
 
@@ -26,7 +27,8 @@ let Container = styled.div`
     align-content: center;
     justify-content: center;
     justify-items: center;
-    align-items: center;
+    flex-direction: row-reverse; 
+    align-items: center ;
     gap: 2rem;
     @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
        grid-column: 1/-1
@@ -141,9 +143,24 @@ let Container = styled.div`
             margin: 3rem;
         }
         &-main{
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             line-height: 1.7;
             margin-bottom: 2rem;
+
+            &--stack{
+                color: ${props => props.theme.colorPrimary};
+                font-size: 1.6rem;
+                font-weight: 500;
+                padding: 2rem .3rem 3rem 0rem ;
+                display: flex;
+                width: 100%;
+                /* justify-content: space-between; */
+                /* height: 3rem;  */
+                img{
+                    height: 2.5rem; 
+                    padding-left: 1rem;
+                }
+            }
         }
         &-info{
             font-size: 1.6rem;
@@ -247,12 +264,17 @@ function About(props) {
                     Based In Nigeria
                 </p>
                 <p className="aboutMeTxt-main">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Aut optio eligendi quis unde placeat sequi repellat, cum dictlestia olor,
-                    sit amet consectetur adipisicing elit. Aut optio eligendi quis unde placeat
-                    sequi repellat.
-                    sit amet consectetur adipisicing elit. Aut optio eligendi quis unde placeat
-                    sequi repellat.
+                I am a skilled programmer that likes writing modular codes that are easily 
+                maintainable and supports continuous integration. 
+                I'm skilled in the art of translating design mock-ups and prototypes 
+                in tools like figma and adobeXD into responsive full fledged iweb apps. 
+                I currently work at rapport tech as a front-end engineer, working on different 
+                projects. In my spare time I work on my personal projects and study to get better.
+                My hobbies include hanging out with friends, watching movies and playing video games.
+                    <br/>
+                    <span className="aboutMeTxt-main--stack">
+                        My tech stack:  <img src={devStackSvg} alt="devStack svg"/>
+                    </span>
                 </p>
                 <ul className="aboutMeTxt-info">
                     <li className="aboutMeTxt-info--items">
@@ -280,19 +302,29 @@ function About(props) {
             <div className="moreInfo">
                 <ul className="aboutMeSocial">
                     <li className="aboutMeSocial-icons">
-                        <img src={twitterSvg} alt="twitterSvg" />
+                       <a href="/">
+                           <img src={twitterSvg} alt="twitterSvg" />
+                       </a>
                     </li>
                     <li className="aboutMeSocial-icons">
-                        <img src={facebookSvg} alt="facebookSvg" />
+                       <a href="/">
+                           <img src={facebookSvg} alt="facebookSvg" />
+                       </a>
                     </li>
                     <li className="aboutMeSocial-icons">
-                        <img src={instagramSvg} alt="instagramSvg" />
+                       <a href="/">
+                           <img src={instagramSvg} alt="instagramSvg" />
+                       </a>
                     </li>
                     <li className="aboutMeSocial-icons">
-                        <img src={linkedinSvg} alt="linkedinSvg" />
+                       <a href="/">
+                           <img src={linkedinSvg} alt="linkedinSvg" />
+                       </a>
                     </li>
                     <li className="aboutMeSocial-icons">
-                        <img src={githubSvg} alt="githubSvg" />
+                       <a href="/">
+                           <img src={githubSvg} alt="githubSvg" />
+                       </a>
                     </li>
                 </ul>
                 <button className="CVDownload">Download CV</button>
