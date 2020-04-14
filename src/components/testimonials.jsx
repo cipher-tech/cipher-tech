@@ -108,7 +108,7 @@ function Testimonials() {
         // cssMode: true,
         loop: true,
         autoplay: {
-            delay: 2500,
+            delay: 3500,
             disableOnInteraction: false,
         },
         navigation: {
@@ -121,7 +121,14 @@ function Testimonials() {
         },
     }
     return (
-        <Container>
+        <Container
+            data-aos="fade-up"
+            data-aos-offset="400"
+            data-aos-delay="600"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true">
+        
             <OffsetText className="offsetText" offset="Kind Words">
                 Testimonials
                 <div className="offsetText--SvgIcon">
@@ -142,11 +149,7 @@ function Testimonials() {
                     <p className="swiper-wrapper-mainContent--text">
                     I am a skilled programmer that likes writing modular codes that are easily maintainable 
                     and supports continuous integration. I'm skilled in the art of 
-                    translating design mock-ups and prototypes in tools like figma and 
-                    adobeXD into responsive full fledged iweb apps. I currently work at 
-                    rapport tech as a front-end engineer, working on different projects. 
-                    In my spare time I work on my personal projects and study to get better. 
-                    My hobbies include hanging out with friends, watching movies and playing video games.
+                    translating design mock-ups and prototypes in tools like figma and.
 
                     </p>
                     <p className="swiper-wrapper-mainContent--profile">

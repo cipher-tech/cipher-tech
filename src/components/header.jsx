@@ -1,9 +1,10 @@
 import React from 'react'
-import styled, {css, keyframes} from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 import logo from "../images/logo.jpg"
 import personSvg from "../images/personSvg.svg"
 import { Diamond, Triangle, Circle } from './styledComponents'
-import breakPoint  from './breakPoints'
+import breakPoint from './breakPoints'
+import { DataAos } from '.'
 
 const bounce = keyframes`
     0% {
@@ -135,15 +136,15 @@ let Container = styled.div`
             position: absolute;
             top: 32rem;
             left: 1rem;
-            ${props =>{
-                let style = css`
+            ${props => {
+        let style = css`
                     top: 33rem;
                 `
-               return breakPoint`
+        return breakPoint`
                 900px
                 ${style}
             `
-            } }
+    }}
             @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {
                 top: 20rem;
              }
@@ -223,35 +224,54 @@ let Container = styled.div`
 function Header(props) {
     return (
         <Container>
+
             <div className="header--logo">
-                <img src={logo} alt="logo" />
+                <DataAos aos="fade-right" aosOffset="100" aosDelay="1000"
+                    aosDuration="400" aosEasing="ease-in-out" aosOnce="true">
+                    <img src={logo} alt="logo" />
+                </DataAos>
             </div>
-            <div className="header-text">
-                <div className="header-text--svgIcon-1">
-                    <Triangle />
-                </div>
-                <div className="header-text--svgIcon-2">
-                    <Circle />
-                </div>
-                <div className="header-text--svgIcon-3">
-                    <Diamond />
-                </div>
-                <h3>
-                    Hi, <br />
+            {/* <DataAos aos="fade-right" aosOffset="100" aosDelay="1500"
+                aosDuration="400" aosEasing="ease-in-out" aosOnce="true"> */}
+                <div className="header-text"
+                    // data-aos="fade-right"
+                    data-aos-offset="100"
+                    data-aos-delay="1000"
+                    data-aos-duration="600"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true">
+                    <div className="header-text--svgIcon-1">
+                        <Triangle />
+                    </div>
+                    <div className="header-text--svgIcon-2">
+                        <Circle />
+                    </div>
+                    <div className="header-text--svgIcon-3">
+                        <Diamond />
+                    </div>
+                    <h3>
+                        Hi, <br />
                     I'm Onubogu Chibuikem
                 </h3>
-                <p>
-                    I'm a Computer science graduate,
-                    Programmer and web desinger
+                    <p>
+                        I'm a Computer science graduate,
+                        Programmer and web desinger
                     <br />
-                    <span>
-                        Nice to meet you
+                        <span>
+                            Nice to meet you
                     </span>
-                </p>
+                    </p>
 
 
-            </div>
-            <div className="header-nav nav">
+                </div>
+            {/* </DataAos> */}
+            <div className="header-nav nav"
+                data-aos="fade-left"
+                data-aos-offset="100"
+                data-aos-delay="1000"
+                data-aos-duration="600"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true">
                 <ul className="nav-wrapper">
                     <li className="nav-wrapper--items">Home</li>
                     <li className="nav-wrapper--items">About</li>

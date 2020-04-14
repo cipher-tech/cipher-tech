@@ -52,48 +52,52 @@ const Container = styled.div`
             padding:2rem;
 
             &-item{
-                list-style-type: none;
+                list-style-type: square;
+                list-style-position: inside;
+                text-align: left;
+                width: 100%;
             }
         }
     }
 `
-export default function card() {
+export default function card(props) {
     return (
-        <Container>
+        <Container
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay={props.delay}
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            >
             <div className="services-description">
-                <img src={programmerSvg} alt="svg icon" className="services-description--svg" />
+                <img src={props.img} alt="svg icon" className="services-description--svg" />
 
                 <p className="services-description--title">
                     {/* <br/> */}
                     <span className="services-description--title-text">
-                        Programmer and designer
+                        {props.title}
                     </span>
                 </p>
                 <p className="services-description--content">
-                    at sequi repellat, cum dictlestia olor,
-                    sit amet consectetur
-                    at sequi repellat, cum
-                    at sequi repellat, cum dictlestia olor,
-                    sit amet consectetur
-                    at sequi repellat, cum
+                    {props.content}
                 </p>
                 <p className="services-description--subtitle">
-                    Things I Design
+                    {props.subtitle}
                 </p>
                 <p className="services-description--content">
-                    at sequi repellat, cum dictlestia olor, sit amet consectetur
-                    at sequi repellat, cum
+                    {props.stack}
                 </p>
                 <p className="services-description--subtitle">
-                    Design Tools:
+                    {props.subtitle2}
                 </p>
                 <ul className="services-description--tools">
-                    <li className="services-description--tools-item">
-                        sequi
-                    </li>
-                    <li className="services-description--tools-item">sequi </li>
-                    <li className="services-description--tools-item">sequi </li>
-                    <li className="services-description--tools-item">sequi </li>
+                    {
+                        props.tools.map(item=> (
+                    
+                            <li  key={item} className="services-description--tools-item"> {item} </li>
+                        ))
+                    }
                 </ul>
             </div>
         </Container>

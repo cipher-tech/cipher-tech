@@ -44,7 +44,13 @@ let Container = styled.div`
 `
 function Contacts() {
     return (
-        <Container>
+        <Container
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="600"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true">
             <div className="stats">
                 <p>10 
                 <br/>

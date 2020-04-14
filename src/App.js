@@ -2,6 +2,8 @@ import React from 'react';
 import { DefaultStyles, Container } from './components/styledComponents/index';
 import Main from './pages/main/main';
 import { ThemeProvider } from 'styled-components';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 
@@ -22,6 +24,7 @@ import { ThemeProvider } from 'styled-components';
   //   },
   // });
 
+  AOS.init()
 
   const theme = {
     colorPrimary: "#2F89FC",

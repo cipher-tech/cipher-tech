@@ -244,7 +244,13 @@ let Container = styled.div`
 `
 function About(props) {
     return (
-        <Container className="aboutMe">
+        <Container className="aboutMe"
+            data-aos="fade-right"
+            data-aos-offset="90"
+            data-aos-delay="400"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true">
             <OffsetText className="aboutMe-title" offset="About me">
                 About me
             </OffsetText>
@@ -255,9 +261,21 @@ function About(props) {
                 <div className="aboutMeImg-SvgXIcon">
                     <XIcon />
                 </div>
-                <img src={aboutPic} alt="about Pic" className="aboutMeImg-photo" />
+                <img src={aboutPic} alt="about Pic" className="aboutMeImg-photo"
+                    data-aos="fade-right"
+                    data-aos-offset="90"
+                    data-aos-delay="600"
+                    data-aos-duration="600"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true" />
             </div>
-            <div className="aboutMeTxt">
+            <div className="aboutMeTxt"
+                    data-aos="fade-up"
+                    data-aos-offset="90"
+                    data-aos-delay="600"
+                    data-aos-duration="800"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true">
                 <p className="aboutMeTxt-title">Chibuikem Onubogu</p>
                 <p className="aboutMeTxt-sub">
                     Programmer & Web Developer
@@ -287,20 +305,26 @@ function About(props) {
                         Phone: 08066060467
                     </li>
                     <li className="aboutMeTxt-info--items">
-                        Freelance:
+                        Freelance: Avaliable
                     </li>
                     <li className="aboutMeTxt-info--items">
-                        experience:
+                        experience: 3 years
                     </li>
                     <li className="aboutMeTxt-info--items">
-                        Residence:
+                        Residence:  Anambra state, Nigeria
 
                     </li>
                 </ul>
 
             </div>
             <div className="moreInfo">
-                <ul className="aboutMeSocial">
+                <ul className="aboutMeSocial"
+                data-aos="fade-right"
+                    data-aos-offset="90"
+                    data-aos-delay="600"
+                    data-aos-duration="600"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true">
                     <li className="aboutMeSocial-icons">
                        <a href="/">
                            <img src={twitterSvg} alt="twitterSvg" />
@@ -327,7 +351,13 @@ function About(props) {
                        </a>
                     </li>
                 </ul>
-                <button className="CVDownload">Download CV</button>
+                <button className="CVDownload"
+                data-aos="fade-right"
+                    data-aos-offset="100"
+                    data-aos-delay="600"
+                    data-aos-duration="600"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true">Download CV</button>
             </div>
 
             <img src={bgSvg} className="aboutMeSvg" alt="aboutSvg" />

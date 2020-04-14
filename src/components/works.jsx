@@ -13,6 +13,8 @@ let Container = styled.div`
     /* height: 50vh; */
     padding: 2rem;
     margin-bottom: 2rem;
+    /* -webkit-box-reflect: below .1rem linear-gradient(tranparent,tranparent,
+    rgba(0,0,0, .2) ); */
 
     @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
         grid-column: 1/-1;
@@ -59,8 +61,9 @@ let Container = styled.div`
     }
     .swiper-wrapper{ 
         height: 50rem;
-        margin: 3rem 2rem;
+        margin: 1rem 2rem;
         width: 35rem;
+        
         /* @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
            width: 40px;
         } */
@@ -85,7 +88,13 @@ function Works(props) {
     }
 
     return (
-        <Container>
+        <Container 
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-delay="600"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true">
             <OffsetText className="projects-title" offset="Projects" >
                 Projects
             <div className="projects-title--SvgIcon">

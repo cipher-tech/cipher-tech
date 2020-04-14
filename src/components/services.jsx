@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 // import programmerSvg from "../images/servicesSvg.svg"
+import programmerSvg from "../images/servicesSvg.svg"
 import bgSvg from "../images/aboutMeCurve.svg"
 import { OffsetText, Triangle, XIcon } from './styledComponents'
 import { ServiceCard } from '.'
@@ -145,6 +146,54 @@ let Container = styled.div`
     }
 `
 function Services() {
+    const services = [
+        {
+            img: programmerSvg,
+            title: "Desinger",
+            content: `I appreciate clean and simplistic design patters, 
+                including material design and neomorphesm, 
+                and incooperate taughtful interactions and animations.`,
+            subtitle: "Things I Design",
+            stack: "UX, UI, Web apps, Mobile apps.",
+            subtitle2: "Design Tools:",
+            tools: ["Balsamiq","AdobeXD","Invision","pen&Paper",
+                "Fireworks"
+                ]
+        },
+        {
+            img: programmerSvg,
+            title: "Front-End ",
+            content: `i enjoy building project from scratch 
+                and make designs come alive using clean code.`,
+            subtitle: "Languages Stack",
+            stack: "HTML, CSS, Scss, Pug, JavaScript, React, jQuery.",
+            subtitle2: "Design Tools:",
+            tools: ["VsCode",
+                "BootStrap",
+                "Materialize",
+                "GitHub",
+                "terminal",
+                "Codepen",
+                "webpack",
+                "barbel"
+            ]
+        },
+        {
+            img: programmerSvg,
+            title: "Back-End",
+            content: `I build server side apps optimized for performance 
+                and continuous integration as well as  efficiency.`,
+            subtitle: "stack",
+            stack: "PHP, NodeJS, MySQL, GraphQl, MongoDB.",
+            subtitle2: "Frameworks:",
+            tools: ["Express", 
+                "Laravel",
+                "Sequelize",
+                "Mongoose",
+                "Apollo"
+            ]
+        },
+    ]
     return (
         <Overlay>
             <Container className="services">
@@ -158,11 +207,20 @@ function Services() {
                 </div>
             </OffsetText>
             
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-
-            
+            {
+                services.map((item, index) => (
+                    <ServiceCard 
+                    key={item.title}
+                    img={item.img}
+                    title={item.title}
+                    content={item.content}
+                    subtitle={item.subtitle}
+                    stack={item.stack}
+                    subtitle2={item.subtitle2}
+                    tools={item.tools}
+                    delay={index * 400} />
+                ))
+            }    
         </Container>
         <img src={bgSvg} className="aboutMeSvg" alt="aboutSvg" />
         </Overlay>

@@ -20,7 +20,13 @@ let Container = styled.div`
 `
 function Footer() {
     return (
-        <Container>
+        <Container
+            data-aos="fade-right"
+            data-aos-offset="0"
+            data-aos-delay="800"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true">
             <p className="footer">
                 © Cipher-Tech 2020 All rights reserved.
            </p>

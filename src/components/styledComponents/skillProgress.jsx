@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import {useSpring, animated} from 'react-spring';
 
 const Container = styled.p`
     display: grid;
@@ -93,9 +93,21 @@ const Container = styled.p`
 }
 `
 export default function SkillProgress({title, level}) {
+    // const spring = useSpring({
+    //     from: {opacity: 0},
+    //     opacity: 1
+    // })
+    // console.log(spring.opacity.interpolate(x => x));
     return (
         <>
-            <Container className="skillSet-level">
+            <Container className="skillSet-level"
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-delay="300"
+                data-aos-duration="600"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"
+                >
                <span className="skillSet-level--title">{title}</span>
                <span>
                   {level}%
