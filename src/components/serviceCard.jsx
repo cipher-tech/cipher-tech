@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import programmerSvg from "../images/servicesSvg.svg"
+// import programmerSvg from "../images/servicesSvg.svg"
 
 const Container = styled.div`
     .services-description{
