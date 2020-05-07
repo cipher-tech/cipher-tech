@@ -1,7 +1,5 @@
 import { createGlobalStyle } from "styled-components"
 
-
-
 const GlobalStyle = createGlobalStyle`
   *,
   *::before,
@@ -26,11 +24,11 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
     margin: auto;
     justify-items: center;
-   
+    background: ${props => props.theme.colorBg};
     align-content: center;
     box-sizing: border-box;
     min-height: 100vh;
-    color: ${props => props.theme.colorDark};
+    color: ${props => props.theme.colorSecondary};
     font-family: montserrat, sans-serif;
 }
 `

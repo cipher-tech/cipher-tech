@@ -77,7 +77,7 @@ let Container = styled.div`
                     width: 8rem;
                     border-radius: 1.5rem;
                     margin: 2rem 0; 
-            }
+                }
             }
             &--text{
                 font-size: 1.5rem;
@@ -192,44 +192,6 @@ function Testimonials() {
                         -kacnam ojvom avjm 'sdodmv' am kbd
                     </p>
                 </div>
-                {/* <div className="swiper-wrapper-mainContent">
-                    <div className="swiper-wrapper-mainContent-imgContainer">
-                        <img className="swiper-wrapper-mainContent-imgContainer--avater" src={bg2} alt="testimonial pic" />
-                    </div>
-                    <p className="swiper-wrapper-mainContent--text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quo non voluptatum neque eos assumenda consequatur deserunt tempora eveniet
-                    </p>
-                    <p className="swiper-wrapper-mainContent--profile">
-                        -kacnam ojvom avjm 'sdodmv' am kbd
-                    </p>
-                </div>
-                <div className="swiper-wrapper-mainContent">
-                    <div className="swiper-wrapper-mainContent-imgContainer">
-                        <img className="swiper-wrapper-mainContent-imgContainer--avater" src={bg2} alt="testimonial pic" />
-                    </div>
-                    <p className="swiper-wrapper-mainContent--text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quo non voluptatum neque eos assumenda consequatur deserunt tempora eveniet
-                    </p>
-                    <p className="swiper-wrapper-mainContent--profile">
-                        kacnam ojvom avjm 'sdodmv' am kbd
-                    </p>
-                </div>
-                <div className="swiper-wrapper-mainContent">
-                    <div className="swiper-wrapper-mainContent-imgContainer">
-                        <img className="swiper-wrapper-mainContent-imgContainer--avater" src={bg2} alt="testimonial pic" />
-                    </div>
-                    <p className="swiper-wrapper-mainContent--text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quo non voluptatum neque eos assumenda consequatur deserunt tempora eveniet
-                    </p>
-                    <p className="swiper-wrapper-mainContent--profile">
-                        kacnam ojvom avjm 'sdodmv' am kbd
-                    </p>
-                </div> */}
-
-
             </Swiper>
         </Container>
     )

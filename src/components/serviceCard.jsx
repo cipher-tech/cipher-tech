@@ -6,7 +6,7 @@ const Container = styled.div`
     .services-description{
         z-index: 10;
         margin: .3rem 1rem;
-        background: white;
+        background: ${props => props.theme.colorBg};
         display: grid;
         /* grid-column: 1/-1; */
         /* width: 33.3333%; */

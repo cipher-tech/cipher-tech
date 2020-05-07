@@ -35,6 +35,7 @@ import 'aos/dist/aos.css'
     colorPurple: "#E049EA",
     colorLight: "#F8F8FF",
     colorInfo: "#83C1FD",
+    colorBg: "#322F55",
     font: {
       xlarge: "15rem",
       large: "10rem",

@@ -13,15 +13,15 @@ import githubSvg from "../images/github.svg"
 
 
 let Container = styled.div`
-    background: white;
+    background: ${props => props.theme.colorBg};
     position: relative;
     grid-column: col-start 2 / col-start 10;
     margin-top: -6rem;
     border-radius: 16px;
     z-index: 25;
     overflow: hidden;
-    box-shadow: 0.3rem 0.3rem .7rem #ece7e773,
-                -0.3rem -0.3rem .7rem rgba(94,104,121, .288) ;
+    box-shadow:  -0.3rem -0.3rem .7rem rgba(94,104,121, .288),
+        0.3rem 0.3rem .7rem #ece7e773;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)) ;
     align-content: center;
