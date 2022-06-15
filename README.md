@@ -1,3 +1,3 @@
 ## hi there
 
-![image](https://user-images.githubusercontent.com/46799303/173940350-4d9274b0-42d5-4bd3-8a9c-ecb217e56432.png)
+![wave](https://user-images.githubusercontent.com/46799303/173940672-77e6affa-6f3d-4e50-93cb-c420251ecec3.gif)
