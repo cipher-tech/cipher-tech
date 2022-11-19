@@ -8,7 +8,7 @@ With my skills, experience and creativity, combined with my passion for software
 
 You can rely on me to help you and your business achieve goals when software is needed.
 
-Skills:  HTML / CSS / Javascript / REACT / Typescript / NodeJs / PHP / Laravel / Python
+Skills:  HTML / CSS / Javascript / REACT / Typescript / NodeJs / PHP / Laravel / Python / PostgreSQL
 
 - 🔭 I’m currently working on Kafene 
 - 🌱 I’m currently learning Blockchain / Solidity 
