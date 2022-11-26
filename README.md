@@ -11,7 +11,7 @@ You can rely on me to help you and your business achieve goals when software is 
 
 Skills:  HTML / CSS / Javascript / REACT / Typescript / NodeJs / PHP / Laravel / Python / PostgreSQL / Docker
 
-- 🔭 I’m currently working on Kafene 
+- 🔭 I’m currently working on Kafene (New York)
 - 🌱 I’m currently learning Blockchain / Solidity 
 - 💬 Ask me about Programming 
 - ⚡ Fun fact: I play video games 
