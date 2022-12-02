@@ -1,7 +1,7 @@
 ### Hi there 👋, my name is Onubogu Chibuikem
 #### I am a talented software engineer with passion for building global solutions that solve problems and improve society. 
 
-#### About
+### About
 
 
 Hi I am Onubogu Chibuikem Onyedikachukwu. I am a talented software engineer with passion for building global solutions that will solve problems and improve society. 
