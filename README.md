@@ -14,7 +14,7 @@ Skills:  HTML / CSS / Javascript / REACT / Typescript / NodeJs / PHP / Laravel /
 - 🔭 I’m currently working on Kafene (New York)
 - 🌱 I’m currently learning Blockchain / Solidity 
 - 💬 Ask me about Programming 
-- ⚡ Fun fact: I play video games 
+- ⚡ Fun fact: I play video games in my free time
 
 
 [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/cipher-tech)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hashnode.svg' alt='dev' height='40'>](https://hashnode.com/@chibuikem-nick)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/https://www.linkedin.com/in/onubogu-chibuikem-883711159//)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg' alt='twitter' height='40'>](https://twitter.com/https://twitter.com/Chibuikem_Nick)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg' alt='codepen' height='40'>](https://codepen.io/https://codepen.io/cipher-tech)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg' alt='stackoverflow' height='40'>](https://stackoverflow.com/users/https://stackoverflow.com/users/14396925/nick-chibuikem)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/icloud.svg' alt='website' height='40'>](https://potfoilo.vercel.app/)  
