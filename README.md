@@ -9,7 +9,7 @@ With my skills, experience and creativity, combined with my passion for software
 Skills:  HTML / CSS / Javascript / REACT / Typescript / NodeJs / PHP / Laravel / Python / PostgreSQL / Docker
 
 - 🔭 I’m currently working on Kafene (New York)
-- 🌱 I’m currently learning Blockchain / Solidity 
+- 🌱 Inreasted Blockchain / Solidity
 - 💬 Ask me about Programming 
 - ⚡ Fun fact: I play video games in my free time
 
