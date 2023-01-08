@@ -1,9 +1,9 @@
-### Hey there 👋, my name is Onubogu Chibuikem
+### Hey there 👋, I'm Onubogu Chibuikem
 #### I am a talented software engineer with passion for building global solutions that solve problems and improve society. 
 
 ### About
 
-Hi I am Onubogu Chibuikem Onyedikachukwu. I am a talented software engineer with passion for building global solutions that will solve problems and improve society. 
+I am Onubogu Chibuikem Onyedikachukwu. I am a talented software engineer with passion for building global solutions that will solve problems and improve society. 
 With my skills, experience and creativity, combined with my passion for software development and technology, I build cutting edge products that are beneficial to the end-users using the latest industry practice and pattern in my field. 
 
 Skills:  HTML / CSS / Javascript / REACT / Typescript / NodeJs / PHP / Laravel / Python / PostgreSQL / Docker
