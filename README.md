@@ -1,4 +1,4 @@
-### Hey there 👋, I'm Onubogu Chibuikem
+### Hey there 👋, I am Onubogu Chibuikem
 #### I am a talented software engineer with passion for building global solutions that solve problems and improve society. 
 
 ### About
