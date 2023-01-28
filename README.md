@@ -11,7 +11,7 @@ Skills:  HTML / CSS / Javascript / REACT / Typescript / NodeJs / PHP / Laravel /
 
 - 🔭 I’m currently working on Kafene (New York)
 - 🌱 Inreasted Blockchain / Solidity
-- 💬 Ask me about Programming 
+- 💬 Ask me about Programming :)
 - ⚡ Fun fact: I contribute to open source in my free time
 
 
